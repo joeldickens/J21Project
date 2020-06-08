@@ -1,0 +1,14 @@
+<h1>Resources</h1>
+<h3>A collection of resources to support the supporters of the movement</h3>
+
+<div class="causes-container">
+
+  <% @resources.each do |resource| %>
+    <% if resource.name != '' && resource.name != nil %>
+      <div class="card">
+        <h5><%= link_to resource.name, resource.website %></h5>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+

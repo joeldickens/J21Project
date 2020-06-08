@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Petitions</h1>
+  <h4>A collection of petitions you can sign</h4>
+</div>
+
+<div class="causes-container">
+
+  <% @petitions.each do |petition| %>
+    <% if petition.name != '' && petition.name != nil %>
+      <div class="card">
+        <h5><%= link_to petition.name, petition.website %></h5>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+
