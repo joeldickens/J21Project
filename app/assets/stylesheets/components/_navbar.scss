@@ -29,3 +29,12 @@
     align-items: center;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .navbar-items {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    align-items: center;
+  }
+}
