@@ -1,0 +1,14 @@
+<h1>Causes</h1>
+<h3>A collection of causes to which you can donate</h3>
+
+<div class="causes-container">
+
+  <% @causes.each do |cause| %>
+    <% if cause.name != '' && cause.name != nil %>
+      <div class="card">
+        <h3><%= link_to cause.name, cause.website %></h3>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+
