@@ -1,0 +1,26 @@
+
+.navbar-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px;
+}
+
+.nav-link {
+  border: black solid 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: white;
+  margin: 5px;
+}
+
+.nav-link:hover {
+  background-color: #E4E4E4;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar-items {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

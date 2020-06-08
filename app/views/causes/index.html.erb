@@ -6,7 +6,7 @@
   <% @causes.each do |cause| %>
     <% if cause.name != '' && cause.name != nil %>
       <div class="card">
-        <h3><%= link_to cause.name, cause.website %></h3>
+        <h5><%= link_to cause.name, cause.website %></h5>
       </div>
     <% end %>
   <% end %>
