@@ -292,7 +292,7 @@ Reading.create(
   )
 
 Reading.create(
-  title: 'What Do I Say WHen...? A Guide for White People',
+  title: 'What Do I Say When...? A Guide for White People',
   description: "Instagram Graphic Thread",
   author: '@ohilyssa',
   website: 'https://www.instagram.com/p/CA1EE9PJZal/?igshid=15m1st0elzprc'
