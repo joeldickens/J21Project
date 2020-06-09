@@ -10,12 +10,12 @@ a {
 }
 
 body {
-  background-color: #F5F5F5;
+  background-color: rgba(0, 0, 255, 0.03);
   text-align: center;
 }
 
 .card {
-  padding: 10px;
+  padding: 15px;
   margin: 5px auto;
   width: 23vw;
   text-align: center;
@@ -36,7 +36,10 @@ h3 {
   font-weight: normal;
 }
 
-
+h6 {
+  color: gray;
+  text-align: left;
+}
 
 .head-container {
   margin-bottom: 20px;
@@ -68,4 +71,14 @@ h3 {
   .card {
     width: 45vw;
   }
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  border: black solid 1px;
 }

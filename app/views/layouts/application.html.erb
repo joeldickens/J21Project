@@ -9,10 +9,27 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel="icon" href="https://image.flaticon.com/icons/svg/3022/3022472.svg">
+    <style>
+    footer {
+      text-align: left;
+      padding: 6px;
+      padding-top: 17px;
+      padding-left: 20px;
+      background-color: lightgray;
+      color: black;
+      margin-top: 15px;
+      font-size: .9rem;
+      line-height: 2px;
+    }
+    </style>
   </head>
 
   <body>
     <%= render 'shared/navbar' %>
     <%= yield %>
-  </body>
+  <footer>
+    <p>Disclaimer: I do not claim ownership of any materials on this website.</p>
+    <p>For inquiries/suggestions/corrections: j21project@gmail.com</p>
+  </footer>
+</body>
 </html>

@@ -201,13 +201,6 @@ Reading.create(
   )
 
 Reading.create(
-  title: 'The New Jim Crow',
-  description: "PDF",
-  author: 'Michelle Alexander',
-  website: 'https://archive.org/details/TheNewJimCrowMassIncarcerMichelleAlexander'
-  )
-
-Reading.create(
   title: 'The End of Policing',
   description: "EBook",
   author: 'Alex S. Vitale',
@@ -236,7 +229,7 @@ Reading.create(
   )
 
 Reading.create(
-  title: '9 Mistakes white People Make When Fighting For Racial Justice',
+  title: '9 Mistakes White People Make When Fighting For Racial Justice',
   description: "Instagram Graphic Thread",
   author: '@jenerous',
   website: 'https://www.instagram.com/p/CBJlef9Jkr-/?igshid=1n9orugb3f8sm'
