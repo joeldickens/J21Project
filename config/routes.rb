@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   resources :petitions, only: [:show, :index]
   resources :readings, only: [:show, :index]
   resources :resources, only: [:show, :index]
+  resources :demonstrations, only: [:show, :index]
 end

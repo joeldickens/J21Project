@@ -1,0 +1,2 @@
+class Demonstration < ApplicationRecord
+end

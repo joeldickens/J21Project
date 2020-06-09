@@ -122,7 +122,17 @@ Cause.create(
   website: 'https://secure.actblue.com/donate/bail_funds_george_floyd',
   )
 
+
+
+
+
 puts 'Creating petitions...'
+
+Petition.create(
+  name: '',
+  details: "",
+  website: ''
+  )
 
 Petition.create(
   name: 'Ban the use of inhumane rubber bullets',
@@ -131,15 +141,15 @@ Petition.create(
   )
 
 Petition.create(
-  name: '',
+  name: 'Federally Required Psychological Screenings for Police Employment and Federal Reforms',
   details: "",
-  website: ''
+  website: 'https://www.change.org/p/robert-menendez-federally-required-psych-screenings-for-police-officer-employment-federal-police-reforms'
   )
 
 Petition.create(
-  name: '',
+  name: 'Stop Ice From Poisoning Immigrants!',
   details: "",
-  website: ''
+  website: 'https://capitalizemytitle.com/'
   )
 
 Petition.create(
@@ -166,16 +176,20 @@ Petition.create(
   )
 
 Petition.create(
-  name: 'TELL MINNEAPOLIS CITY COUNCIL TO DEFUND THE POLICE',
+  name: 'Tell Minneapolis City Council to Defund the Police',
   details: "",
   website: 'https://secure.everyaction.com/eR7GA7oz70GL8doBq19LrA2'
   )
 
 Petition.create(
-  name: 'NATIONAL ACTION AGAINST POLICE BRUTALITY! PROSECUTE POLICE WHO MURDER UNARMED INDIVIDUALS!',
+  name: 'National Action Against Police Brutality! Prosecute Policy Who Murder Unarmed Individuals!',
   details: "",
   website: 'https://www.change.org/p/national-action-against-police-brutality-and-murder'
   )
+
+
+
+
 
 puts 'Creating readings...'
 
@@ -188,17 +202,102 @@ Reading.create(
 
 Reading.create(
   title: 'The New Jim Crow',
-  description: "The New Jim Crow: Mass Incarceration in the Age of Colorblindness is a book by Michelle Alexander, a civil rights litigator and legal scholar.",
+  description: "PDF",
   author: 'Michelle Alexander',
   website: 'https://archive.org/details/TheNewJimCrowMassIncarcerMichelleAlexander'
   )
 
 Reading.create(
   title: 'The End of Policing',
-  description: "The problem is not overpolicing, it is policing itself. Recent years have seen an explosion of protests against police brutality and repression. Among activists, journalists and politicians, the conversation about how to respond and improve policing has focused on accountability, diversity, training, and community relations. Unfortunately, these reforms will not produce results, either alone or in combination. The core of the problem must be addressed: the nature of modern policing itself.",
+  description: "EBook",
   author: 'Alex S. Vitale',
   website: 'https://www.versobooks.com/books/2817'
   )
+
+Reading.create(
+  title: 'What Is Qualified Immunity and How Does It Work?',
+  description: "Instagram Graphic Thread",
+  author: '@auntsarahdraws',
+  website: 'https://www.instagram.com/p/CBLTHloHvri/?igshid=19ancjyki26wa'
+  )
+
+Reading.create(
+  title: 'Keeping up Anti-Racist Momentum After the News Cycle',
+  description: "Instagram Graphic Thread",
+  author: '@officialmillenialblack',
+  website: 'https://www.instagram.com/p/CA7hcbCAPlJ/?igshid=13pspqqyjvwy5'
+  )
+
+Reading.create(
+  title: 'You Did Something Problematic, What Now?',
+  description: "Instagram Graphic Thread",
+  author: '@_bri_chandler_',
+  website: 'https://www.instagram.com/p/CA-3MaShOIu/?igshid=mmgg7xc6g1q3'
+  )
+
+Reading.create(
+  title: '9 Mistakes white People Make When Fighting For Racial Justice',
+  description: "Instagram Graphic Thread",
+  author: '@jenerous',
+  website: 'https://www.instagram.com/p/CBJlef9Jkr-/?igshid=1n9orugb3f8sm'
+  )
+
+Reading.create(
+  title: 'Reformist Reforms vs. Abolitionist Reforms in Policing',
+  description: "Instagram Graphic Thread",
+  author: '@criticalresistance',
+  website: 'https://www.instagram.com/p/CBKOn92gfTp/?igshid=1h6vtzhb8dgc6'
+  )
+
+Reading.create(
+  title: 'Preventing Burnout: Keeping the Movement Alive',
+  description: "Instagram Graphic Thread",
+  author: '@vahinishori',
+  website: 'https://www.instagram.com/p/CA-6v-3DmSL/?igshid=10h0b6fu4vhl8'
+  )
+
+Reading.create(
+  title: "9 Things That Simply Wouldn't Exist Without Black Women",
+  description: "Instagram Graphic Thread",
+  author: '@theunplugcollective',
+  website: 'https://www.instagram.com/p/B9e6JgWpNbZ/?igshid=1g5ykssry503'
+  )
+
+Reading.create(
+  title: 'What Has The Uprising Accomplished?',
+  description: "Instagram Graphic Thread",
+  author: '@springmagca',
+  website: 'https://www.instagram.com/p/CBDWk6GgLfx/?igshid=afbk0hfgklqp'
+  )
+
+Reading.create(
+  title: 'How Can I Keep Working on Being an Ally Everyday?',
+  description: "Instagram Graphic Thread",
+  author: '@rhymeswithhellstudio',
+  website: 'https://www.instagram.com/p/CBJb7CAjCK2/?igshid=sp5yfr15c5np'
+  )
+
+Reading.create(
+  title: 'Why The Refusal To Post Online is Often Inherently Racist',
+  description: "Instagram Graphic Thread",
+  author: '@ghostdumps',
+  website: 'https://www.instagram.com/p/CA0zhFzFjLf/?igshid=pmwpb16b0c57'
+  )
+
+Reading.create(
+  title: 'Defund the NYPD',
+  description: "Instagram Graphic Thread",
+  author: '@samsimagery',
+  website: 'https://www.instagram.com/p/CBCQ1gYFB6S/?igshid=ttdh8m11oeex'
+  )
+
+Reading.create(
+  title: 'What Do I Say WHen...? A Guide for White People',
+  description: "Instagram Graphic Thread",
+  author: '@ohilyssa',
+  website: 'https://www.instagram.com/p/CA1EE9PJZal/?igshid=15m1st0elzprc'
+  )
+
 
 puts 'Creating resources...'
 

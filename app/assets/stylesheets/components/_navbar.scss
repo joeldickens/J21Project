@@ -1,7 +1,8 @@
 
 .navbar-items {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-content: space-around;
   align-items: center;
   margin-left: 1vw;
@@ -11,10 +12,13 @@
 
 .nav-link {
   border: black solid 1px;
+  font-size: 1.5vw;
   font-weight: bold;
   text-transform: uppercase;
   background-color: white;
   margin: 5px;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .nav-link:hover {
@@ -27,6 +31,9 @@
     margin-left: 4vw;
     margin-right: 4vw;
     align-items: center;
+  }
+  .nav-link {
+    font-size: 3vw;
   }
 }
 
