@@ -1,14 +1,19 @@
-<div class="head-container">
-  <h1>Demonstrations</h1>
-  <h4>In progress</h4>
-</div>
-
-<div class="causes-container">
-  <% @demonstrations.each do |demonstration| %>
-    <% if demonstration.name != '' && demonstration.name != nil %>
-      <div class="card">
-        <h5><%= link_to demonstration.name, demonstration.website %></h5>
-      </div>
-    <% end %>
-  <% end %>
-</div>
+<body>
+  <div class="wrapper">
+    <div class="head-container">
+      <h1>Demonstrations</h1>
+      <h4>In progress</h4>
+    </div>
+    <div class="causes-container">
+      <% @demonstrations.each do |demonstration| %>
+        <% if demonstration.name != '' && demonstration.name != nil %>
+          <div class="card">
+            <h5><%= link_to demonstration.name, demonstration.website %></h5>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="push"></div>
+  </div>
+  <footer class="footer"></footer>
+</body>

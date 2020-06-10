@@ -1,18 +1,21 @@
-<div class="head-container">
-  <h1>Readings</h1>
-  <h4>A collection of free readings related to the movement</h4>
-</div>
-
-<div class="causes-container">
-
-  <% @readings.each do |reading| %>
-    <% if reading.title != '' && reading.title != nil %>
-      <div class="card">
-        <h5><%= link_to reading.title, reading.website %></h5>
-        <h6><%= reading.author %></h6>
-        <h6><%= reading.description %></h6>
-      </div>
-    <% end %>
-  <% end %>
-</div>
-
+<body>
+  <div class="wrapper">
+    <div class="head-container">
+      <h1>Readings</h1>
+      <h4>A collection of free readings related to the movement</h4>
+    </div>
+    <div class="causes-container">
+      <% @readings.each do |reading| %>
+        <% if reading.title != '' && reading.title != nil %>
+          <div class="card">
+            <h5><%= link_to reading.title, reading.website %></h5>
+            <h6><%= reading.author %></h6>
+            <h6><%= reading.description %></h6>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="push"></div>
+  </div>
+  <footer class="footer"></footer>
+</body>

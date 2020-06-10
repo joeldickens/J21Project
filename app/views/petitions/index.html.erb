@@ -1,17 +1,20 @@
-<div class="head-container">
-  <h1>Petitions</h1>
-  <h4>A collection of petitions you can sign</h4>
-</div>
-<br>
+<body>
+  <div class="wrapper">
+    <div class="head-container">
+      <h1>Petitions</h1>
+      <h4>A collection of petitions you can sign</h4>
+    </div>
+    <div class="causes-container">
 
-<div class="causes-container">
-
-  <% @petitions.each do |petition| %>
-    <% if petition.name != '' && petition.name != nil %>
-      <div class="card">
-        <h5><%= link_to petition.name, petition.website %></h5>
-      </div>
-    <% end %>
-  <% end %>
-</div>
-
+      <% @petitions.each do |petition| %>
+        <% if petition.name != '' && petition.name != nil %>
+          <div class="card">
+            <h5><%= link_to petition.name, petition.website %></h5>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="push"></div>
+  </div>
+  <footer class="footer"></footer>
+</body>

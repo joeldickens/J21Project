@@ -1,16 +1,20 @@
-<div class="head-container">
-  <h1>Resources</h1>
-  <h4>A collection of resources to support the supporters of the movement</h4>
-</div>
+<body>
+  <div class="wrapper">
+    <div class="head-container">
+      <h1>Resources</h1>
+      <h4>A collection of resources to support the supporters of the movement</h4>
+    </div>
+    <div class="causes-container">
 
-<div class="causes-container">
-
-  <% @resources.each do |resource| %>
-    <% if resource.name != '' && resource.name != nil %>
-      <div class="card">
-        <h5><%= link_to resource.name, resource.website %></h5>
-      </div>
-    <% end %>
-  <% end %>
-</div>
-
+      <% @resources.each do |resource| %>
+        <% if resource.name != '' && resource.name != nil %>
+          <div class="card">
+            <h5><%= link_to resource.name, resource.website %></h5>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="push"></div>
+  </div>
+  <footer class="footer"></footer>
+</body>
